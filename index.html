@@ -1,0 +1,485 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Semana da Musicoterapia 2026</title>
+    <style>
+        /* CONSTANTES DE CORES (EXTRAÍDAS DA IMAGEM BANNER) */
+        :root {
+            --bg-light-green: #dce5c8;
+            --card-green: #90a968;
+            --dark-green: #4b6e28;
+            --text-dark: #2c3a18;
+            --white: #ffffff;
+        }
+
+        /* INICIALIZAÇÃO DE ESTILOS E TIPOGRAFIA */
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        body {
+            background-color: var(--bg-light-green);
+            color: var(--text-dark);
+            line-height: 1.6;
+        }
+
+        /* CABEÇALHO DA PÁGINA */
+        header {
+            background-color: var(--bg-light-green);
+            text-align: center;
+            padding: 40px 20px 20px 20px;
+        }
+
+        header h1 {
+            color: var(--dark-green);
+            font-size: 2.2rem;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+
+        header h2 {
+            color: var(--text-dark);
+            font-size: 1.4rem;
+            font-weight: 400;
+            margin-top: 5px;
+        }
+
+        header p {
+            margin-top: 10px;
+            font-weight: bold;
+            color: var(--dark-green);
+        }
+
+        /* CONTAINER PRINCIPAL E PROGRAMAÇÃO */
+        .container {
+            max-width: 1000px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+         .logo-img {
+                width: 40%;
+            }
+
+        .day-section {
+            background-color: var(--white);
+            border-radius: 12px;
+            margin-bottom: 30px;
+            overflow: hidden;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+        }
+
+        .day-header {
+            background-color: var(--card-green);
+            color: var(--white);
+            padding: 15px 20px;
+            font-size: 1.3rem;
+            font-weight: bold;
+            text-transform: uppercase;
+        }
+
+        /* ESTRUTURA DA TABELA DE PROGRAMAÇÃO */
+        .schedule-table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+
+        .schedule-table th, 
+        .schedule-table td {
+            padding: 15px;
+            text-align: left;
+            border-bottom: 1px solid #e2ebd0;
+        }
+
+        .schedule-table th {
+            background-color: rgba(144, 169, 104, 0.15);
+            color: var(--dark-green);
+            font-weight: bold;
+        }
+
+        /* CONFIGURAÇÃO E TAMANHO DA IMAGEM DO INSTAGRAM (1:1 ASPECT RATIO) */
+        .insta-thumb {
+            width: 120px;
+            height: 120px;
+            object-fit: cover;
+            border-radius: 8px;
+            border: 2px solid var(--card-green);
+            display: block;
+        }
+
+        .col-img {
+            width: 140px;
+        }
+
+        .col-time {
+            width: 110px;
+            font-weight: bold;
+            color: var(--dark-green);
+        }
+
+        /* RODAPÉ DA PÁGINA */
+        footer {
+            background-color: var(--dark-green);
+            color: var(--white);
+            text-align: center;
+            padding: 20px;
+            margin-top: 40px;
+        }
+
+        /* RESPONSIVIDADE PARA DISPOSITIVOS MÓVEIS (CELULAR) */
+        @media (max-width: 768px) {
+            .logo-img {
+                width: 80%;
+            }
+            /* TRANSFORMA A TABELA EM LAYOUT DE CARDS VERTICAIS */
+            .schedule-table, 
+            .schedule-table tbody, 
+            .schedule-table tr, 
+            .schedule-table td {
+                display: block;
+                width: 100%;
+            }
+
+            .schedule-table thead {
+                display: none; /* OCULTA O CABEÇALHO DA TABELA EM TELAS PEQUENAS */
+            }
+
+            .schedule-table tr {
+                margin-bottom: 15px;
+                border-bottom: 2px solid var(--bg-light-green);
+                padding: 15px;
+            }
+
+            .schedule-table td {
+                padding: 5px 0;
+                border: none;
+            }
+
+            /* IMAGEM FICA POSICIONADA ACIMA DO TEXTO */
+            .col-img {
+                width: 100%;
+                margin-bottom: 10px;
+            }
+
+            .insta-thumb {
+                width: 100%;
+                max-width: 300px;
+                height: 300px; /* PROPORÇÃO QUADRADA INSTAGRAM EM TELAS PEQUENAS */
+                margin: 0 auto;
+            }
+
+            .col-time {
+                font-size: 1.1rem;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Semana da Musicoterapia 2026</h1>
+        <h2><i>Inquietações e Possibilidades</i></h2>
+        <p>UNESPAR | CAMT | Faculdade de Artes do Paraná</p>
+        <img class="logo-img" src="img/logos.png">
+    </header>
+
+    <div class="container">
+
+        <!-- DIA 14/09/2026 - SEGUNDA-FEIRA -->
+        <div class="day-section">
+            <div class="day-header">Segunda-Feira - 14/09/2026</div>
+            <table class="schedule-table">
+                <thead>
+                    <tr>
+                        <th>Mídia</th>
+                        <th>Horário</th>
+                        <th>Atividade</th>
+                        <th>Palestrante / Facilitador</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="col-img"><img src="./img/2-intro.png" alt="Abertura" class="insta-thumb"></td>
+                        <td class="col-time">08:00</td>
+                        <td>Abertura da Semana de Musicoterapia</td>
+                        <td>-</td>
+                    </tr>
+                    <tr>
+                        <td class="col-img"><img src="./img/2-rose.png" alt="Musicoterapia ontem e hoje" class="insta-thumb"></td>
+                        <td class="col-time">08:30</td>
+                        <td><b>Musicoterapia ontem e hoje </b><br>
+                        Musicoterapeuta. Professora do Colegiado de Musicoterapia da UNESPAR, Campus de Curitiba II. Doutora em Educação. Professora do programa de Mestrado em Educação Inclusiva-PROFEI. Membro do Núcleo de Estudos e Pesquisas Interdisciplinares em Musicoterapia-NEPIM.
+<br><br>
+Conversa sobre o cenário do curso de Musicoterapia da UNESPAR nas últimas décadas e da inserção de profissionais musicoterapeutas na sociedade laboral.</td>
+                        <td>Prof. Dra. Rosemyrian Ribeiro dos Santos Cunha</td>
+                    </tr>
+                    <tr>
+                        <td class="col-img"><img src="./img/2-intro.png" alt="Intervalo cultural" class="insta-thumb"></td>
+                        <td class="col-time">10:00</td>
+                        <td>Intervalo cultural</td>
+                        <td>-</td>
+                    </tr>
+                    <tr>
+                        <td class="col-img"><img src="./img/2-daniel.png" alt="Introdução à Musicoterapia Neurológica" class="insta-thumb"></td>
+                        <td class="col-time">10:20</td>
+                        <td><b>Introdução à Musicoterapia Neurológica (Palestra Internacional - online)</b><br>
+                        Daniel Padilha é Musicoterapeuta e Musicoterapeuta Neurológico, com mais de 10 anos de experiência clínica internacional nas áreas de neuroreabilitação, lesão cerebral e transtornos neurológicos, atuando com crianças e adultos.
+Possui Mestrado em Musicoterapia pela Universidade de Barcelona e formação avançada em Musicoterapia Neurológica pela Academy of Neurologic Music Therapy, de Toronto, Canadá. É registrado no Health and Care Professions Council (HCPC) e membro da British Association for Music Therapy (BAMT), no Reino Unido.
+Em Londres, atuou como Music Therapist Lead na Unidade de Neuroreabilitação Aguda do Wellington Hospital, desenvolvendo intervenções voltadas à reabilitação física, cognitiva, comunicativa, emocional e social de pessoas com lesão cerebral. Atualmente mantém prática clínica privada em Musicoterapia Neurológica, trabalhando em colaboração com fisioterapeutas, terapeutas ocupacionais, fonoaudiólogos e outros profissionais envolvidos na neuroreabilitação.
+<br><br>
+A palestra apresenta os fundamentos da Musicoterapia Neurológica (Neurologic Music Therapy - NMT) e sua aplicação na neuroreabilitação.
+A partir da experiência clínica do palestrante, serão abordadas diferentes formas de utilizar a música e seus elementos - como ritmo, melodia e estrutura - de maneira terapêutica e direcionada a objetivos de reabilitação.
+Serão apresentados exemplos de intervenções relacionadas às áreas motora, cognitiva, comunicação e linguagem, mostrando também como a Musicoterapia Neurológica pode ser integrada ao trabalho de uma equipe multidisciplinar.
+A proposta é oferecer uma introdução prática e acessível à NMT, aproximando seus princípios da realidade clínica e demonstrando possibilidades de aplicação com pessoas com lesões cerebrais e outros transtornos neurológicos.
+</td>
+                        <td>Daniel Padilha</td>
+                    </tr>
+                    <tr>
+                        <td class="col-img"><img src="./img/2-dinamica.png" alt="Dinâmica de integração" class="insta-thumb"></td>
+                        <td class="col-time">11:35</td>
+                        <td>Dinâmica de integração entre alunos e centro acadêmico</td>
+                        <td>Centro Acadêmico de Musicoterapia</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <!-- DIA 15/09/2026 - TERÇA-FEIRA -->
+        <div class="day-section">
+            <div class="day-header">Terça-Feira - 15/09/2026</div>
+            <table class="schedule-table">
+                <thead>
+                    <tr>
+                        <th>Mídia</th>
+                        <th>Horário</th>
+                        <th>Atividade</th>
+                        <th>Palestrante / Facilitador</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="col-img"><img src="./img/3-intro.png" alt="Chegança" class="insta-thumb"></td>
+                        <td class="col-time">07:45</td>
+                        <td>Chegança</td>
+                        <td>-</td>
+                    </tr>
+                    <tr>
+                        <td class="col-img"><img src="./img/3-marjorie.png" alt="Transtorno no Espectro Autista" class="insta-thumb"></td>
+                        <td class="col-time">08:00</td>
+                        <td><b>A nova fronteira do tratamento do Transtorno no Espectro Autista (TEA) a partir do canabidiol</b>
+                            <br>
+                            Médica Pediatra Neonatologista e doutoranda em Farmacologia pela Universidade Federal do Paraná (UFPR), sob
+orientação da Profa. Dra. Joice Maria da Cunha. Atuação em Neonatologia e no Acompanhamento Ambulatorial de
+crianças prematuras egressas de UTI Neonatal na UBS Mãe Curitibana. Possui formação complementar em
+Epidemiologia pela Johns Hopkins University e em Saúde Pública. Pesquisa o uso do canabidiol (CBD) no
+tratamento do Transtorno do Espectro Autista (TEA). Sua trajetória une a prática clínica no cuidado da primeira
+infância à pesquisa translacional, com interesse particular em abordagens terapêuticas integrativas e
+multidisciplinares no neurodesenvolvimento infantil.
+<br><br>
+
+A palestra apresenta os avanços mais recentes na abordagem terapêutica do Transtorno do Espectro Autista, com
+destaque para o papel do sistema endocanabinoide e o potencial terapêutico do canabidiol (CBD) como estratégia
+inovadora de tratamento. Serão discutidos os fundamentos farmacogenômicos que influenciam a resposta individual
+ao CBD, os desafios regulatórios da pesquisa clínica com canabinoides no Brasil, e os resultados esperados de
+ensaios clínicos em andamento, oferecendo uma visão atualizada e baseada em evidências sobre as novas fronteiras
+no cuidado de crianças e adolescentes com TEA. É com esse olhar voltado à interdisciplinaridade no tratamento do
+TEA, trazendo aos futuros musicoterapeutas uma perspectiva médica sobre as novas fronteiras terapêuticas do
+autismo e os pontos de diálogo entre a pesquisa clínica e a musicoterapia enquanto intervenção no neurodesenvolvimento.
+                        </td>
+                        <td>Marjorie Feliz</td>
+                    </tr>
+                    <tr>
+                        <td class="col-img"><img src="./img/3-iara.png" alt="Saúde mental dos estudantes" class="insta-thumb"></td>
+                        <td class="col-time">09:00</td>
+                        <td>Saúde mental dos estudantes e cuidados preventivos para musicoterapeutas</td>
+                        <td>1. Júnior Tomaz de Souza (DIVAS)<br>2. Prof. Msa. Iara del Padre Iarema</td>
+                    </tr>
+                    <tr>
+                        <td class="col-img"><img src="./img/3-intro.png" alt="Intervalo cultural" class="insta-thumb"></td>
+                        <td class="col-time">10:00</td>
+                        <td>Intervalo cultural</td>
+                        <td>-</td>
+                    </tr>
+                    <tr>
+                        <td class="col-img"><img src="./img/3-bomtom.png" alt="Minicursos" class="insta-thumb"></td>
+                        <td class="col-time">10:20</td>
+                        <td><b> Musicoterapia em bom tom: como exercer sua profissão com segurança, organização e menos burocracia</b>
+                            <br>
+                            Fernanda Roberta Fernandes Piper é formada em Comunicação Social e Ciências Contábeis pelo UniBrasil, com mais de 21 anos de experiência na área contábil. É contadora e gestora da Contabilidade Fernandes, escritório com mais de 45 anos de atuação e mais de 160 clientes, em sua maioria profissionais e empresas da área da saúde. Sua atuação é voltada a tornar os temas contábeis, tributários e empresariais mais claros, práticos e acessíveis.
+<br><br>
+O minicurso apresenta, de forma leve e prática, os principais cuidados legais, contábeis e financeiros relacionados à atuação do musicoterapeuta. Serão abordados temas como regulamentação profissional, prestação de serviços como pessoa física ou jurídica, emissão de documentos fiscais, impostos, contratos e organização financeira. O objetivo é ajudar o profissional a tomar decisões mais seguras e manter sua atividade organizada, sem permitir que a burocracia ocupe o espaço da criatividade e do cuidado.
+                        </td>
+                        <td>Fernanda Roberta Piper</td>
+                    </tr>
+                     <tr>
+                        <td class="col-img"><img src="./img/3-andressa.png" alt="Minicursos" class="insta-thumb"></td>
+                        <td class="col-time">10:20</td>
+                        <td><b>MINICURSO: Prática musicoterapêutica coletiva na América Latina </b><br>
+                        Possui graduação em Musicoterapia pela Universidade Estadual do Paraná - Faculdade de Artes do Paraná. Doutora em Psicologia pela Universidade Federal de Santa Catarina - UFSC. Mestre em Psicologia pelo Programa de Pós-Graduação em Psicologia da Universidade Federal de Santa Catarina - UFSC. Especialista em Formação Pedagógica do Professor Universitário pela Pontifícia Universidade Católica PUC-PR. Trabalha como professora adjunta na Universidade Estadual do Paraná Campus de Curitiba II no Bacharelado em Musicoterapia. É docente no Programa de Pós-Graduação em Música (PPGMUS) da UNESPAR. Membro do NEPIM (Núcleo de Pesquisas Interdisciplinares em Musicoterapia). Atuando principalmente nas seguintes áreas: musicoterapia, música, cultura, sociedade, canto e docência. </td>
+                        <td>Prof. Dra. Andressa Arndt</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <!-- DIA 16/09/2026 - QUARTA-FEIRA -->
+        <div class="day-section">
+            <div class="day-header">Quarta-Feira - 16/09/2026</div>
+            <table class="schedule-table">
+                <thead>
+                    <tr>
+                        <th>Mídia</th>
+                        <th>Horário</th>
+                        <th>Atividade</th>
+                        <th>Palestrante / Facilitador</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="col-img"><img src="./img/4-chega.png" alt="Chegança" class="insta-thumb"></td>
+                        <td class="col-time">07:45</td>
+                        <td>Chegança</td>
+                        <td><b>Mih Costa e Rafa Dorneles</b> vão agitar os nossos corações na manhã de quarta-feira.</td>
+                    </tr>
+                    <tr>
+                        <td class="col-img"><img src="./img/4-ju.png" alt="Aspectos éticos-políticos" class="insta-thumb"></td>
+                        <td class="col-time">08:00</td>
+                        <td><b>Aspectos éticos-políticos da musicoterapia e diversidade</b><br>
+                        Juliana Brito, nascida em Juiz de Fora/MG, é musicista, cantora, psicóloga, musicoterapeuta, mestra em Música e doutoranda em Musicoterapia. Atua como musicoterapeuta no Instituto Mano Down e regente do Bloco ClandesTinas. É membra fundadora do Coletivo Musicoteraprets e foi musicoterapeuta convidada do projeto Diversxs – Musicovivências Queers. Com 30 anos de trajetória no universo da música e da percussão, constrói uma atuação que articula arte, cuidado e pesquisa. Na Musicoterapia, desenvolve pesquisas voltadas à utilização consciente do ritmo e dos instrumentos de percussão como recursos terapêuticos focados na escuta, vínculo e transformação no setting musicoterapêutico. 
+<br><br></td>
+                        <td>Juliana Brito (@musicoteraprets)</td>
+                    </tr>
+                    <tr>
+                        <td class="col-img"><img src="./img/4-cloves.png" alt="Luto e cuidados paliativos" class="insta-thumb"></td>
+                        <td class="col-time">09:00</td>
+                        <td><b>Luto e cuidados paliativos</b>
+                            <br>
+                            Formado em Psicologia pela Universidade Federal do Paraná, Especialista em Cuidados Paliativos pela Facultad de Medicina da Universidad Complutense de Madrid, Especialista em Bioética pela PUCPR, Mestre e Doutor em Educação pela PUCPR.  Curso de Atualização em Cuidados Paliativos em Sevilha – Espanha ( 2018).Professor Titular do Curso de Psicologia da PUCPR, onde atua desde 1991. Ex Psicólogo do Serviço de Hemato-Oncologia do Hospital Pequeno Príncipe, Ex Psicólogo do Serviço de  Transplante de Medula Óssea do Hospital de Clínicas da UFPR. Autor de artigos e capítulos de livros sobre Tanatologia, Luto, Síndrome de Burnout e Violências Escolares (Bullying). Criador e Diretor do Instituto de Tanatologia Cloves Amorim (ITACA). Psicoterapeuta de Adultos e Idosos.
+                        </td>
+                        <td>Cloves Antonio De Amissis Amorim</td>
+                    </tr>
+                    <tr>
+                        <td class="col-img"><img src="./img/4-intro.png" alt="Intervalo cultural" class="insta-thumb"></td>
+                        <td class="col-time">10:00</td>
+                        <td>Intervalo cultural</td>
+                        <td>-</td>
+                    </tr>
+                    <tr>
+                        <td class="col-img"><img src="./img/4-egressos.png" alt="Roda de conversa" class="insta-thumb"></td>
+                        <td class="col-time">10:20</td>
+                        <td>Roda de conversa com egressos da FAP: mundo do trabalho e musicoterapia</td>
+                        <td>Egressos da FAP</td>
+                    </tr>
+                    <tr>
+                        <td class="col-img"><img src="./img/4-extensao.png" alt="Projetos de extensão" class="insta-thumb"></td>
+                        <td class="col-time">11:20</td>
+                        <td>Apresentação de projetos de extensão:<br>1. Roda de Samba<br>2. Projeto Fermata<br>3. UAPI<br>4. Grupo Integrativo de Música Brasileira para Autistas</td>
+                        <td>1. Profa Dra Mariana Lacerda Arruda<br>2. Profa Dra Pierangela Simões<br>3. Prof. Dr. Lydio Roberto<br>4. Prof Ms. José Augusto Pereira Navarro Lins</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <!-- DIA 17/09/2026 - QUINTA-FEIRA -->
+        <div class="day-section">
+            <div class="day-header">Quinta-Feira - 17/09/2026</div>
+            <table class="schedule-table">
+                <thead>
+                    <tr>
+                        <th>Mídia</th>
+                        <th>Horário</th>
+                        <th>Atividade</th>
+                        <th>Palestrante / Facilitador</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="col-img"><img src="./img/5-ipe.png" alt="Chegança" class="insta-thumb"></td>
+                        <td class="col-time">08:00</td>
+                        <td>Chegança</td>
+                        <td><b>Grupo IPE</b> oferara essa chegança <i>premium</i> na quinta-feira.</td>
+                    </tr>
+                    <tr>
+                        <td class="col-img"><img src="./img/5-caicara.png" alt="Oficinas" class="insta-thumb"></td>
+                        <td class="col-time">08:30 - 11:30</td>
+                        <td><b>OFICINA: Músicas e danças caiçara</b> <br>
+
+                        Oficina com o objetivo de aproximar os estudantes da música caiçara, suas canções e seus instrumentos musicais tradicionais, bem como de algumas danças realizadas por comunidades em todo o território caiçara.
+
+Conteúdo: <br>
+
+- Breve contextualização etnomusicológica; Música e Dança: <br>
+- Contato com os instrumentos musicais; <br>
+- Modas bailadas (Chamarrita e Dom Dom) <br>
+- Ciranda Caiçara <br>
+- Passadinho; <br>
+- Arara; <br>
+- Pau de Fitas</td>
+                        <td>Prof Ms. José Augusto Pereira Navarro Lins</td>
+                    </tr>
+                     <tr>
+                        <td class="col-img"><img src="./img/5-darda.png" alt="Oficinas" class="insta-thumb"></td>
+                        <td class="col-time">08:30 - 11:30</td>
+                        <td><b>OFICINA: Manejo de comportamento na musicoterapia</b> <br>
+                        Mestre em Música pela Universidade Estadual do Paraná (2025), possui graduação em Música pela Faculdade de Ciências Aplicadas de Cascavel (2011), especialização em Neuropedagogia na Educação pelo Instituto Rhema Educação (2011) e especialização em Musicoterapia pela Faculdade Candeias (2017). Atua na área da música desde 2010, com experiência em ensino-aprendizagem, educação regular e inclusiva, e, desde 2013, no atendimento especializado de crianças com Autismo com abordagens coportamentais e desenvolvimentistas. Atualmente, dedica-se à Musicoterapia aplicada aos transtornos do desenvolvimento, atendendo o público infantojuvenil em contextos individuais e grupais.
+Também realiza workshops, mentorias e formação de profissionais, voltados à utilização da música como estratégia de intervenção nos transtornos do neurodesenvolvimento, além de produzir conteúdos educativos para profissionais da área.
+<br><br>
+A oficina Manejo de Comportamento na Musicoterapia apresenta estratégias simples e práticas para que profissionais iniciantes possam compreender melhor os comportamentos desafiadores que podem surgir durante os atendimentos. O conteúdo aborda a identificação das possíveis funções dos comportamentos, a observação de antecedentes e consequências, o uso de reforço positivo, recursos visuais e sensoriais, organização da rotina e estratégias de comunicação e autorregulação. Também são apresentadas orientações para diferenciar crises e birras e para atuar de forma preventiva e segura durante as sessões.
+                        </td>
+                        <td>Darda Azevedo</td>
+                    </tr>
+                     <tr>
+                        <td class="col-img"><img src="./img/5-ju.png" alt="Oficinas" class="insta-thumb"></td>
+                        <td class="col-time">08:30 - 11:30</td>
+                        <td><b>OFICINA: Percussão em Musicoterapia</b><br>
+                        Juliana Brito, nascida em Juiz de Fora/MG, é musicista, cantora, psicóloga, musicoterapeuta, mestra em Música e doutoranda em Musicoterapia. Atua como musicoterapeuta no Instituto Mano Down e regente do Bloco ClandesTinas. É membra fundadora do Coletivo Musicoteraprets e foi musicoterapeuta convidada do projeto Diversxs – Musicovivências Queers. Com 30 anos de trajetória no universo da música e da percussão, constrói uma atuação que articula arte, cuidado e pesquisa. Na Musicoterapia, desenvolve pesquisas voltadas à utilização consciente do ritmo e dos instrumentos de percussão como recursos terapêuticos focados na escuta, vínculo e transformação no setting musicoterapêutico. 
+<br><br>
+A oficina “Percussão na Musicoterapia” é baseada na Musicoterapia improvisacional e tem como objetivo proporcionar experiências práticas com instrumentos de percussão, explorando o ritmo, a escuta, a interação e a improvisação musical como recursos para a prática musicoterapêutica. A proposta busca ampliar as possibilidades de utilização da percussão em contextos clínicos e terapêuticos, valorizando a criatividade, a expressão musical e a construção coletiva.</td>
+                        <td>Juliana Brito</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <!-- DIA 18/09/2026 - SEXTA-FEIRA -->
+        <div class="day-section">
+            <div class="day-header">Sexta-Feira - 18/09/2026</div>
+            <table class="schedule-table">
+                <thead>
+                    <tr>
+                        <th>Mídia</th>
+                        <th>Horário</th>
+                        <th>Atividade</th>
+                        <th>Palestrante / Facilitador</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="col-img"><img src="./img/6-sarau.png" alt="Sarau de musicoterapia" class="insta-thumb"></td>
+                        <td class="col-time">08:00</td>
+                        <td>Sarau de musicoterapia</td>
+                        <td>-</td>
+                    </tr>
+                    <tr>
+                        <td class="col-img"><img src="./img/6-triagem.png" alt="Triagem auditiva" class="insta-thumb"></td>
+                        <td class="col-time">09:00</td>
+                        <td>Triagem auditiva ofertada pela disciplina Saúde e Trabalho em Música</td>
+                        <td>Profa. Dra. Pierangela Simões, em parceria com o curso de Fonoaudiologia da UNICESUMAR</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+    </div>
+
+    <footer>
+        <p>Semana da Musicoterapia 2026 - UNESPAR / FAP</p>
+    </footer>
+
+</body>
+</html>
